@@ -1,0 +1,113 @@
+@import "../../styles/scss/1-global/global";
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+.primary-icon-text-btn-sm,
+.primary-icon-text-btn-md,
+.primary-icon-text-btn-lg,
+.secondary-icon-text-btn-sm,
+.secondary-icon-text-btn-md,
+.secondary-icon-text-btn-lg,
+.tertiary-icon-text-btn-sm,
+.tertiary-icon-text-btn-md,
+.tertiary-icon-text-btn-lg {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.4rem;
+  padding-left: 1rem;
+}
+
+.primary-icon-text-btn-sm,
+.secondary-icon-text-btn-sm,
+.tertiary-icon-text-btn-sm {
+  width: 150px;
+  height: 30px;
+  border-radius: $radius-md;
+}
+
+.primary-icon-text-btn-md,
+.secondary-icon-text-btn-md,
+.tertiary-icon-text-btn-md {
+  width: 200px;
+  height: 35px;
+  border-radius: $radius-md;
+}
+
+.primary-icon-text-btn-lg,
+.secondary-icon-text-btn-lg,
+.tertiary-icon-text-btn-lg {
+  width: 250px;
+  height: 40px;
+  border-radius: $radius-lg;
+}
+
+.primary-icon-text-btn-sm,
+.primary-icon-text-btn-md,
+.primary-icon-text-btn-lg,
+.secondary-icon-text-btn-sm,
+.secondary-icon-text-btn-md,
+.secondary-icon-text-btn-lg {
+  &:hover {
+    box-shadow: $hover;
+  }
+  &:focus {
+    box-shadow: $focus;
+  }
+  &:active {
+    background: $blue-s1;
+  }
+}
+
+.primary-icon-text-btn-sm,
+.primary-icon-text-btn-md,
+.primary-icon-text-btn-lg {
+  background: $blue;
+
+  .icon-xs,
+  .icon-sm {
+    color: $white;
+  }
+}
+
+.secondary-icon-text-btn-sm,
+.secondary-icon-text-btn-md,
+.secondary-icon-text-btn-lg {
+  border: $blue-border;
+  box-sizing: border-box;
+
+  .icon-xs,
+  .icon-sm {
+    color: $blue;
+  }
+
+  &:active {
+    .icon-xs,
+    .icon-sm {
+      color: $white;
+    }
+  }
+}
+
+.tertiary-icon-text-btn-sm,
+.tertiary-icon-text-btn-md,
+.tertiary-icon-text-btn-lg {
+  background: var(--secondary);
+  color: var(--sub-text-color);
+
+  &:hover,
+  &:focus {
+    color: $white;
+    .icon-sm,
+    .icon-md {
+      color: $white;
+    }
+  }
+  &:hover {
+    background: var(--hover-color);
+  }
+  &:focus {
+    box-shadow: $focus;
+  }
+}

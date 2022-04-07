@@ -1,0 +1,44 @@
+@import "../../styles/scss/1-global/global.scss";
+
+.alert {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 600px;
+  height: 60px;
+  background: var(--primary);
+  border-radius: $radius-md;
+  box-sizing: border-box;
+  padding: 0 1rem;
+  bottom: 20px;
+  outline: none;
+  border: none;
+}
+
+.success-alert {
+  .simple-text,
+  .accent {
+    color: #20a779;
+  }
+}
+
+.default-alert {
+  .simple-text,
+  .accent {
+    color: #007bc3;
+  }
+}
+
+.warning-alert {
+  .icon-sm,
+  .accent {
+    color: #f0a92d;
+  }
+}
+
+.error-alert {
+  .icon-sm,
+  .accent {
+    color: #f32e2e;
+  }
+}
